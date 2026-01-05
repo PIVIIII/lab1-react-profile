@@ -1,16 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>My first React App</h1>
-      </div>
-    </>
-  )
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <h1>My Team Portfolio</h1>
+      <ProfileCard
+        name="วริยา ไอยรา"
+        role="Student @ CEDT"
+        bio="I love my job"
+      />
+
+      <ProfileCard
+        name="John Doе"
+        role="Guest Developer"
+        bio="I love coding and learning new things."
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
